@@ -1,20 +1,22 @@
 ﻿<Properties StartupConfiguration="{4D99167E-B138-D1D0-434D-97E4FA72FE4C}|">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/mouse.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="48917c32-4f17-4c92-8ae3-14d6c7d75659" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Movment.cs">
     <Files>
       <File FileName="Assets/Scripts/mouse.cs" Line="21" Column="18" />
-      <File FileName="Assets/Scripts/Movment.cs" Line="34" Column="6" />
+      <File FileName="Assets/Scripts/Movment.cs" Line="9" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="shootingGame2" expanded="True">
+          <Node name="shootingGame2" expanded="True" selected="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="mouse.cs" selected="True" />
-              </Node>
+              <Node name="Scripts" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -29,8 +31,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e229cc43-e452-4299-8f03-45e23c687e57" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
