@@ -358,6 +358,8 @@
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aEDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs"
+"Assets/Scripts/animationStateController.cs"
+"Assets/Scripts/GunShooting.cs"
 "Assets/Scripts/mouse.cs"
 "Assets/Scripts/Movment.cs"
 -langversion:9.0

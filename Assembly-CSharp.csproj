@@ -59,6 +59,8 @@
     <Compile Include="Assets/Scripts/mouse.cs" />
     <Compile Include="Assets/Scripts/Movment.cs" />
     <Compile Include="Assets/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs" />
+    <Compile Include="Assets/Scripts/animationStateController.cs" />
+    <Compile Include="Assets/Scripts/GunShooting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Nokobot/Modern Guns - Handgun/README.txt" />
