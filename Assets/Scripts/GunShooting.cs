@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class GunShooting : MonoBehaviour
 {
+    public float damage = 10f;
+    public float range = 100f;
+    public float fireRate = 15;
+    public float impactForce = 30f;
+
+    public Camera fpsCam;
+    public ParticleSystem muzzleFlash;
+    //public GameObject impactEffect;
+
+    private float nextTimeToFire = 0f;
+
     void Start()
     {
         
@@ -12,12 +23,30 @@ public class GunShooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButton(0))
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
         {
-            GameObject cubeObject = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
+    }
 
-            cubeObject.transform.localPosition = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y + 0.13f, gameObject.transform.position.z + 0.2f);
-            cubeObject.transform.localScale = new Vector3(0.0135902f, 0.01889082f, 0.07185815f);
+    void Shoot()
+    {
+        muzzleFlash.Play();
+
+        RaycastHit hit;
+        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+
+            Target target = hit.transform.GetComponent <Target>();
+
+            if (target != null)
+            {
+                target.TakeDamage(damage);
+            }
+
+            //Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
     }
 }
