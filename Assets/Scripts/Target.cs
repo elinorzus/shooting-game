@@ -1,16 +1,21 @@
+using TMPro;
 using UnityEngine;
 
 public class Target : MonoBehaviour
 {
     public float health = 50f;
+    public TextMeshProUGUI Text;
+
+    void Start()
+    {
+        Text.text = "Dummy's health: " + health;
+    }
+
 
     public void TakeDamage(float amount)
     {
         health -= amount;
-        if(transform.GetChild(0).GetChild(0).name == "Text")
-        {
-            Debug.Log("E");
-        }
+        Text.text = "Dummy's health: " + health;
 
         if (health <= 0f)
         {
@@ -20,6 +25,7 @@ public class Target : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        Text.enabled = false;
+        transform.GetComponent<Renderer>().enabled = false;
     }
 }

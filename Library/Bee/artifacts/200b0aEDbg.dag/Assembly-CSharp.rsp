@@ -372,6 +372,7 @@
 "Assets/JMO Assets/WarFX/Scripts/WFX_LightFlicker.cs"
 "Assets/JMO Assets/WarFX/Spawn System/CFX_SpawnSystem.cs"
 "Assets/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs"
+"Assets/Scripts/Button.cs"
 "Assets/Scripts/GunShooting.cs"
 "Assets/Scripts/MouseLook.cs"
 "Assets/Scripts/Movment.cs"
