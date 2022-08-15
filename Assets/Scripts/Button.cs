@@ -43,15 +43,16 @@ public class Button : MonoBehaviour
         {
             if(CanvasEnable)
             {
-                if(GameObject.Find(Enemy.name) != null)
+                if(Enemy.transform.GetComponent<Renderer>().enabled == true)
                 {
                     Enemy.GetComponent<Target>().health = 50f;
                     guiText.text = "Dummy's health: " + 50;
                 }
-                else
+                else if(Enemy.transform.GetComponent<Renderer>().enabled == false)
                 {
-                    //text.enabled = true;
-                    Enemy.GetComponent<Renderer>().enabled = true;
+                    guiText.enabled = true;
+                    Enemy.transform.GetComponent<Renderer>().enabled = true;
+                    Debug.Log("work");
                 }
             }
         }
