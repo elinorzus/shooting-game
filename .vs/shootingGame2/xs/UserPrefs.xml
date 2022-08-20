@@ -1,20 +1,28 @@
 ﻿<Properties StartupConfiguration="{4D99167E-B138-D1D0-434D-97E4FA72FE4C}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e958dcec-49c3-4493-bfcb-1bba009bba9c" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Button.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ContinueScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/MouseLook.cs" Line="29" Column="12" />
+      <File FileName="Assets/Scripts/MouseLook.cs" Line="7" Column="1" />
       <File FileName="Assets/Scripts/Movment.cs" Line="32" Column="30" />
       <File FileName="Assets/Scripts/GunShooting.cs" Line="25" Column="6" />
-      <File FileName="Assets/Scripts/Target.cs" Line="25" Column="1" />
-      <File FileName="Assets/Scripts/Button.cs" Line="51" Column="72" />
+      <File FileName="Assets/Scripts/Target.cs" Line="28" Column="30" />
+      <File FileName="Assets/Scripts/Button.cs" Line="27" Column="75" />
+      <File FileName="Assets/Scripts/EscButton.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/ContinueScript.cs" Line="42" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="shootingGame2" expanded="True" selected="True" />
+          <Node name="shootingGame2" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="ContinueScript.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
@@ -27,7 +35,7 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ed5dbed4-c4c0-4d53-85fc-5bdcde9c778f" />
 </Properties>

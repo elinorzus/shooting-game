@@ -52,7 +52,6 @@ public class Button : MonoBehaviour
                 {
                     guiText.enabled = true;
                     Enemy.transform.GetComponent<Renderer>().enabled = true;
-                    Debug.Log("work");
                 }
             }
         }

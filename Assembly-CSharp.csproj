@@ -56,6 +56,7 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/MonoBundle/Addins/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/ContinueScript.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Scripts/CFX_LightIntensityFade.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo.cs" />
     <Compile Include="Assets/Scripts/MouseLook.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets/Scripts/Movment.cs" />
     <Compile Include="Assets/Scripts/GunShooting.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_Wall.cs" />
+    <Compile Include="Assets/Scripts/EscButton.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Scripts/CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets/JMO Assets/WarFX/Demo/Assets/WFX_Demo_DeleteAfterDelay.cs" />
     <Compile Include="Assets/Nokobot/Modern Guns - Handgun/_Demo Assets/SimpleShoot.cs" />
