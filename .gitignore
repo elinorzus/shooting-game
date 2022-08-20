@@ -1,0 +1,5 @@
+.DS_Store
+.vsconfig
+obj/Debug
+.vs
+Temp
