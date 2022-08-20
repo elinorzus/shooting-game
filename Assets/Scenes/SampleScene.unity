@@ -206,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4527274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 963194230}
+        m_TargetAssemblyTypeName: EscButton, Assembly-CSharp
+        m_MethodName: OnQuitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4527274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,11 +641,11 @@ RectTransform:
   m_Children:
   - {fileID: 2111598431}
   m_Father: {fileID: 456419886}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 42.999985}
+  m_AnchoredPosition: {x: 0, y: 51}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237224638
@@ -680,9 +692,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1209685620}
-        m_TargetAssemblyTypeName: ContinueScript, Assembly-CSharp
-        m_MethodName: onClick
+      - m_Target: {fileID: 963194230}
+        m_TargetAssemblyTypeName: EscButton, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -742,10 +754,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3169c71c4a05b487aaf5e31062dbe3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressed: 0
-  player: {fileID: 0}
-  main: {fileID: 0}
-  gun: {fileID: 0}
   canvas: {fileID: 456419885}
 --- !u!1 &305109987
 GameObject:
@@ -1341,8 +1349,9 @@ RectTransform:
   m_Children:
   - {fileID: 1197948018}
   - {fileID: 1394968502}
-  - {fileID: 237224637}
+  - {fileID: 825560768}
   - {fileID: 4527272}
+  - {fileID: 237224637}
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1363,7 +1372,7 @@ GameObject:
   - component: {fileID: 581250424}
   - component: {fileID: 581250423}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ExitButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2458,6 +2467,82 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.043}
+--- !u!1 &825560767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 825560768}
+  - component: {fileID: 825560770}
+  - component: {fileID: 825560769}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &825560768
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825560767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 456419886}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &825560769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825560767}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &825560770
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825560767}
+  m_CullTransparentMesh: 1
 --- !u!1 &853454434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,6 +3273,8 @@ MonoBehaviour:
   gun: {fileID: 1485585387}
   main: {fileID: 963194227}
   canvas: {fileID: 456419885}
+  text1: {fileID: 2111598432}
+  text2: {fileID: 581250423}
 --- !u!1 &1010082477
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,10 +4060,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3169c71c4a05b487aaf5e31062dbe3c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressed: 0
-  player: {fileID: 1743364671}
-  main: {fileID: 963194227}
-  gun: {fileID: 1485585387}
   canvas: {fileID: 456419885}
 --- !u!1 &1221091639
 GameObject:
@@ -6295,7 +6378,7 @@ GameObject:
   - component: {fileID: 2111598433}
   - component: {fileID: 2111598432}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ResumeButtonText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
